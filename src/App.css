@@ -1,0 +1,84 @@
+.App {
+    font-family: 'Russo One', sans-serif;
+    background-color: black;
+    height: 100vh;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.App-header {
+    /* margin: 15px 0px 0px 0px; */
+    font-size: calc(10px + 1vh);
+    text-align: center;
+    color: white;
+    height: 8vh;
+}
+
+button {
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+}
+button:hover {
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    outline: none
+}
+
+#Calculator {
+    display: grid;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    padding: 15px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "a a a a"
+        "b c d e"
+        "f g h i"
+        "j k l i"
+        "m n o p"
+        "q q r p";
+    background-color: gray;
+}
+
+#Screen {
+    height:90%;
+    width: 100%;
+    font-family: 'Russo One', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#calculation {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+#display {
+    height: 50%;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    text-align: right;
+    box-sizing: border-box;
+    border: none;
+    padding-right: 10px
+}
+#display:hover {
+    cursor: default
+}
