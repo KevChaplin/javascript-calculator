@@ -6,7 +6,7 @@ freeCodeCamp.org
 ## Build Notes
 
 Built using "Create React App".  
-HTML, CSS, React (using modern hooks to control state)
+HTML, CSS, React (using modern hooks to control state).  
 Calculator uses formula logic (rather than immediate execution logic - see below, "Note on calculator logic")
 
 ## Known Issues
