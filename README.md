@@ -3,9 +3,22 @@
 Created as project 4 of the "Front End Development Libraries Projects" of the "FreeCodeCamp" syllabus.
 freeCodeCamp.org
 
+## Build Notes
+
+Built using "Create React App".  
+HTML, CSS, React (using modern hooks to control state)
+Calculator uses formula logic (rather than immediate execution logic - see below, "Note on calculator logic")
+
+## Known Issues
+
+- All functionality requested by user story are satisfied. However, FCC test script incorrectly assess functionality. Awaiting feedback on why test results are erroneous.
+- background height when in landscape mode on mobile device
+
+## Project 4 - Build a JavaScript Calculator
+
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/wgGVVX.
 
-Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+Fulfil the below user stories and get all of the tests to pass. Give it your own personal style.
 
 You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
@@ -45,7 +58,3 @@ EXAMPLE: 3 + 5 x 6 - 2 / 4 =
 
 Immediate Execution Logic: 11.5
 Formula/Expression Logic: 32.5
-
-## Known Issues
-
-- background height when in landscape mode on mobile device
