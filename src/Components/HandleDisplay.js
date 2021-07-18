@@ -1,7 +1,8 @@
 // import buttonData from './buttonData'
 import calculate from './calculate'
 
-function HandleDisplay(output, input) {
+// function receives currrent input and output (display and calculation) and returns updated output
+function handleDisplay(input, output) {
 
     let display = output.display
     let calculation = output.calculation
@@ -93,13 +94,16 @@ function HandleDisplay(output, input) {
             }
 
         } else if ((displayType ===  "operator") && (input.type === "operator")) {
-            if ((input.value === "-") && (isCalcLastNumber)) {      // if input is minus and calculation ends in number,
-                calculation = calculation + " " + display           // display operator moved to calculation,
-                display = input.value                               // input minus is set as display for negative number
-            } else if (isCalcLastNumber) {                          // else (for other input operator)
-                display = input.value                               // display operator is replaced with new input operator
-            }                                                       // else (calculation ends in operator) new input operator is ignored
-        }
+            if ((input.value === "-") && (isCalcLastNumber)) {        // if input is minus, display is already an operator and calculation ends in number...
+                calculation = calculation + " " + display             // displayed operator is moved to calculation ...
+                display = input.value                                 // to allow for display to use negative number ...
+            } else if ((!isCalcLastNumber) && (display === "-")) {    // however, if the above operation has been performed and a new operator is input ...
+                calculation = calculation.slice(0,-1)                 // the final operation in calculation is overidden (deleted) so that only the final input operator (excluding minus) is used
+                display = input.value
+            } else if (isCalcLastNumber) {                            // if calculation ends in a number display operator is overidden
+                display = input.value
+            }
+        }                                                             // (implied) else (calculation ends in operator) new input operator is ignored
 
     return {
         display: display,
@@ -108,4 +112,4 @@ function HandleDisplay(output, input) {
 
 }
 
-export default HandleDisplay
+export default handleDisplay

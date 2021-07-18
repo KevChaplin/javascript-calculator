@@ -1,5 +1,6 @@
 import React from 'react'
 
+// controls the display: main display "display" and concurrent "calculation" display
 function Screen(props) {
 
     const styles = {gridArea: "a"}

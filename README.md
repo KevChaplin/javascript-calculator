@@ -11,8 +11,7 @@ Calculator uses formula logic (rather than immediate execution logic - see below
 
 ## Known Issues
 
-- All functionality requested by user story are satisfied. However, FCC test script incorrectly assess functionality. Awaiting feedback on why test results are erroneous.
-- background height when in landscape mode on mobile device
+- App header obscured on particular screen sizes
 
 ## Project 4 - Build a JavaScript Calculator
 
