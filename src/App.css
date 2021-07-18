@@ -10,11 +10,10 @@
 }
 
 .App-header {
-    /* margin: 15px 0px 0px 0px; */
     font-size: calc(10px + 1vh);
     text-align: center;
     color: white;
-    height: 8vh;
+    height: 6vh;
 }
 
 button {
@@ -33,13 +32,13 @@ input[type=text]:focus {
 
 #Calculator {
     display: grid;
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    padding: 15px;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 10px;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 3px;
     grid-template-areas:
         "a a a a"
         "b c d e"
@@ -81,4 +80,20 @@ input[type=text]:focus {
 }
 #display:hover {
     cursor: default
+}
+
+
+@media screen and (min-height: 550px){
+
+  .App-header {
+      font-size: calc(10px + 2vh);
+  }
+
+  #Calculator {
+      width: 300px;
+      height: 450px;
+      margin: 10px;
+      padding: 15px;
+      gap: 5px;
+  }
 }

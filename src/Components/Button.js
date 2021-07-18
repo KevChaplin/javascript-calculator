@@ -1,5 +1,6 @@
 import React from 'react'
 
+// handles all buttons on the calculator
 function Button(props) {
 
     const styles = {gridArea: props.position}
